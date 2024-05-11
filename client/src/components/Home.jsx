@@ -9,6 +9,7 @@ import { FaEye } from "react-icons/fa";
 import { MdEdit, MdDelete } from "react-icons/md";
 import { Navigate } from "react-router-dom";
 
+
 const Home = ({ isAuthenticated, tasks, setTasks, taskTitle }) => {
   const [showCreateModal, setShowCreateModal] = useState(false);
   const [showUpdateModal, setShowUpdateModal] = useState(false);
@@ -93,6 +94,7 @@ const Home = ({ isAuthenticated, tasks, setTasks, taskTitle }) => {
                       onClick={() => deleteTask(task._id)}
                       className="fs-3 "
                     />
+                  
                     <FaEye
                       onClick={() => handleViewModalShow(task._id)}
                       className="fs-3 "

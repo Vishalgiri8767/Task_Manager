@@ -7,6 +7,7 @@ import { Toaster } from "react-hot-toast";
 import axios from "axios";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
+import ErrorPage from "./components/ErrorPage";
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [tasks, setTasks] = useState([]);
@@ -74,6 +75,8 @@ const App = () => {
             path="/profile"
             element={<Profile user={user} isAuthenticated={isAuthenticated} />}
           />
+          <Route path="*" element={<ErrorPage />} />
+
         </Routes>
         <Toaster />
       </Router>

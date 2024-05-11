@@ -75,17 +75,19 @@ function Header({
 
   return (
     <Navbar
+      collapseOnSelect
       expand="lg"
       className={`bg-body-tertiary ${!isAuthenticated ? "d-none" : ""}`}
+      
     >
       <Container>
         <Navbar.Brand href="#home">TASK MANAGER</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto fs-5 px-4">
             <Link
               to={"/"}
-              className="text-decoration-none d-flex align-items-center link-light  "
+              className="px-2 text-decoration-none d-flex align-items-center link-light  "
             >
               Home
             </Link>
@@ -103,16 +105,19 @@ function Header({
                 Archived Tasks
               </NavDropdown.Item>
             </NavDropdown>
+            </Nav>
+            <Nav className="fs-5 bold-text">
             <Link
               to={"/profile"}
-              className="text-decoration-none d-flex align-items-center link-light  "
+              className="text-decoration-none mx-4 d-flex align-items-center link-light  "
             >
               Profile
             </Link>
             <Button
-              className="bg-transparent border-0"
-              style={{ width: "fit-content" }}
+              className="btn btn-danger border-0"
+              style={{ width: "fit-content", }}
               onClick={handleLogout}
+
             >
               LOGOUT
             </Button>

@@ -5,6 +5,10 @@ import toast from "react-hot-toast";
 
 const ViewTaskModal = ({ showViewModal, handleViewModalClose, id }) => {
   const [task, setTask] = useState([]);
+
+  const createdAtDate = new Date(task.createdAt);
+  const formattedDate = createdAtDate.toDateString(); // Format: Mon May 08 2024
+
   useEffect(() => {
     const getSingleTask = async () => {
       await axios
@@ -37,6 +41,10 @@ const ViewTaskModal = ({ showViewModal, handleViewModalClose, id }) => {
           <Stack>
             <p className="fw-bold mb-0">Description</p>
             <p>{task && task.description}</p>
+          </Stack>
+          <Stack>
+            <p className="fw-bold mb-0">Date</p>
+            <p>{task && formattedDate}</p>
           </Stack>
         </Modal.Body>
         <Modal.Footer>

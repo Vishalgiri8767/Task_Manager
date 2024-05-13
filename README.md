@@ -105,6 +105,7 @@ To set up and run the Task Manager web application locally, follow these steps:
 - **validator:** A library for data validation in JavaScript based on validator.js.
 
 ## API Documentation
+## User Authentication
 ### User Registration
 
 Endpoint: `POST http://localhost:4000/api/v1/user/register`
@@ -161,6 +162,45 @@ Request Headers:
 Notes:
 - The Authorization header with the JWT token of the logged-in user is required for authentication.
 
+## Task Manager API Documentation
 
+### Create Task
+
+Endpoint: `POST http://localhost:4000/api/v1/task/post`
+
+Description: Creates a new task.
+
+Request Body:
+- **title** (string, required): Title of the task.
+- **description** (string): Description of the task.
+
+Example Request Body:
+```json
+{
+  "title": "Complete Project Proposal",
+  "description": "Write and finalize the project proposal document."
+}
+```
+
+### Update Task
+
+Endpoint: `PUT http://localhost:4000/api/v1/task/update/:id`
+
+Description: Updates an existing task by ID.
+
+Parameters:
+- **id** (string, required): ID of the task to update.
+
+Request Body:
+- **title** (string): New title of the task.
+- **description** (string): New description of the task.
+
+Example Request Body:
+```json
+{
+  "title": "Complete Project Proposal",
+  "description": "Write and finalize the project proposal document. Update: Add budget estimates."
+}
+```
 
 

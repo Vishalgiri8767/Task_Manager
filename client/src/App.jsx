@@ -8,6 +8,7 @@ import axios from "axios";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
 import ErrorPage from "./components/ErrorPage";
+
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [tasks, setTasks] = useState([]);
@@ -18,7 +19,7 @@ const App = () => {
     const handleGetUser = async () => {
       try {
         const { data } = await axios.get(
-          "https://task-manager-backend-orcin.vercel.app/api/v1/user/me",
+          "http://localhost:4000/api/v1/user/me",
           { withCredentials: true }
         );
         setIsAuthenticated(true);

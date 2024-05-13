@@ -128,6 +128,7 @@ Example Request Body:
   "password": "securePassword",
   "avatar": "<avatar_image_data>"
 }
+```
 ### User Login
 
 Endpoint: `POST http://localhost:4000/api/v1/user/login`
@@ -146,6 +147,6 @@ Example Request Body:
   "password": "securePassword"
  
 }
-
+```
 
 

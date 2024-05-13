@@ -73,7 +73,8 @@ npm install
 
 
 3. Set up environment variables:
-- Create a `.env` file in the `server` directory.
+- rename a `sample_config` as `config` file in the `server` directory.
+
 - Define environment variables in the `.env` file as needed for your project setup, such as database connection details, API keys, etc.
 
 4. Start the development server:

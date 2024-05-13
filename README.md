@@ -1,8 +1,21 @@
-# Task Manager MERN Application
+# Task Manager Web MERN Application
+
+## Overview
+
+Task Manager is a web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It provides users with the ability to manage their tasks efficiently through features like task creation, updating, deletion, and marking tasks as completed.
+
+## Project Structure
+
+The project is structured into two main folders: `client` and `server`.
+
+### Client
+
+The client folder contains the frontend of the application.
+
 
 ### Server
 
-The server folder contains the backend of the application. Details about the server setup and structure can be found within the server directory.
+The server folder contains the backend of the application.
 
 ## Tech Stack
 
@@ -11,7 +24,7 @@ The server folder contains the backend of the application. Details about the ser
 - **Database:** MongoDB
 - **State Management:** React Context API or Redux (if used)
 - **Authentication:** JSON Web Tokens (JWT)
-- **Styling:** CSS
+- **Styling:** TailwindCss
 
 ## Project Setup
 

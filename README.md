@@ -128,6 +128,24 @@ Example Request Body:
   "password": "securePassword",
   "avatar": "<avatar_image_data>"
 }
+### User Login
+
+Endpoint: `POST http://localhost:4000/api/v1/user/login`
+
+Description: Registers a new user.
+
+Request Body:
+
+- **email** (string, required): email of the existing user.
+- **password** (string, required): password of the user.
+
+Example Request Body:
+```json
+{
+  "email": "john@example.com",
+  "password": "securePassword"
+ 
+}
 
 
 

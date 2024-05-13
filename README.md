@@ -1,4 +1,4 @@
-# Task_Manager
+# Task Manager MERN Application
 
 ### Server
 

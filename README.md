@@ -4,6 +4,15 @@
 
 Task Manager is a web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It provides users with the ability to manage their tasks efficiently through features like task creation, updating, deletion, and marking tasks as completed.
 
+## Features
+
+- **Task Creation:** Easily create new tasks with titles and descriptions.
+- **Task Management:** Update task details or delete tasks when they are no longer needed.
+- **Task Completion:** Mark tasks as completed to keep track of progress.
+- **Avatar Management:** Users can upload and store their avatars using Cloudinary.
+- **User Authentication:** Secure user authentication system to protect user data.
+- **Responsive Design:** User-friendly interface accessible across various devices.
+
 ## Project Structure
 
 The project is structured into two main folders: `client` and `server`.
@@ -22,7 +31,6 @@ The server folder contains the backend of the application.
 - **Frontend:** React.js
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
-- **State Management:** React Context API or Redux (if used)
 - **Authentication:** JSON Web Tokens (JWT)
 - **Styling:** TailwindCss
 
@@ -80,12 +88,56 @@ To set up and run the Task Manager web application locally, follow these steps:
 
 5. Ensure your MongoDB instance is running and accessible.
 
-6. Access the Task Manager web application in your web browser at `http://localhost:3000`.
+6. Access the Task Manager web application in your web browser at `http://localhost:4000`.
 
-## Contributing
+## Packages Used
 
-Contributions are welcome! If you find any bugs or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+- **bcrypt:** A library for hashing passwords securely.
+- **cloudinary:** A media management platform for uploading, storing, and manipulating images and videos.
+- **cookie-parser:** A middleware to parse cookies attached to the client request object.
+- **cors:** A middleware for enabling Cross-Origin Resource Sharing (CORS) in your Express.js applications.
+- **dotenv:** A zero-dependency module that loads environment variables from a .env file into process.env.
+- **express:** A minimalist web framework for Node.js used for building RESTful APIs.
+- **express-fileupload:** Middleware for handling file uploads in Express.js.
+- **jsonwebtoken:** An implementation of JSON Web Tokens (JWT) for user authentication.
+- **mongodb:** The official MongoDB driver for Node.js.
+- **mongoose:** An elegant MongoDB object modeling tool for Node.js.
+- **validator:** A library for data validation in JavaScript based on validator.js.
 
-## License
+# API Documentation
 
-This project is licensed under the [MIT License](LICENSE).
+## User Endpoints
+
+### User Registration
+
+Endpoint: `POST http://localhost:4000/api/v1/user/register`
+
+Description: Registers a new user.
+
+Request Body:
+- name (string, required): Name of the user.
+- email (string, required): Email of the user.
+- phoneNumber (string): Phone number of the user.
+- password (string, required): Password of the user.
+- avatar (file): Avatar image of the user.
+
+Example Request Body:
+```json
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "phoneNumber": "1234567890",
+  "password": "securePassword",
+  "avatar": "<avatar_image_data>"
+}
+
+# API Documentation
+
+## User Endpoints
+
+### User Logout
+
+Endpoint: `GET http://localhost:4000/api/v1/user/logout`
+
+Description: Logs out the authenticated user.
+

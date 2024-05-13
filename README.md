@@ -129,21 +129,5 @@ Example Request Body:
   "avatar": "<avatar_image_data>"
 }
 
-### User Login
 
-Endpoint: `POST http://localhost:4000/api/v1/user/login`
-
-Description: Authenticates a user and generates a JWT token.
-
-Request Body:
-
-- **email** (string, required): Email of the user.
-- **password** (string, required): Password of the user.
-
-Example Request Body:
-```json
-{
-  "email": "john@example.com",
-  "password": "securePassword"
-}
 

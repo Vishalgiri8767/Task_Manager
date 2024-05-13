@@ -104,10 +104,7 @@ To set up and run the Task Manager web application locally, follow these steps:
 - **mongoose:** An elegant MongoDB object modeling tool for Node.js.
 - **validator:** A library for data validation in JavaScript based on validator.js.
 
-# API Documentation
-
-## User Endpoints
-
+## API Documentation
 ### User Registration
 
 Endpoint: `POST http://localhost:4000/api/v1/user/register`
@@ -115,11 +112,12 @@ Endpoint: `POST http://localhost:4000/api/v1/user/register`
 Description: Registers a new user.
 
 Request Body:
-- name (string, required): Name of the user.
-- email (string, required): Email of the user.
-- phoneNumber (string): Phone number of the user.
-- password (string, required): Password of the user.
-- avatar (file): Avatar image of the user.
+
+- **name** (string, required): Name of the user.
+- **email** (string, required): Email of the user.
+- **phoneNumber** (string): Phone number of the user.
+- **password** (string, required): Password of the user.
+- **avatar** (file): Avatar image of the user.
 
 Example Request Body:
 ```json
@@ -130,31 +128,3 @@ Example Request Body:
   "password": "securePassword",
   "avatar": "<avatar_image_data>"
 }
-
-# API Documentation
-
-## User Endpoints
-
-### User Login
-
-Endpoint: `POST http://localhost:4000/api/v1/user/login`
-
-Description: Authenticates a user and generates a JWT token.
-
-Request Body:
-- email (string, required): Email of the user.
-- password (string, required): Password of the user.
-
-Example Request Body:
-```json
-{
-  "email": "john@example.com",
-  "password": "securePassword"
-}
-
-### User Logout
-
-Endpoint: `GET http://localhost:4000/api/v1/user/logout`
-
-Description: Logs out the authenticated user.
-

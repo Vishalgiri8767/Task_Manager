@@ -89,62 +89,8 @@ npm install
   ```
 
 5. Access the application:
-- Once the client and server are running, you can access the application in your web browser at `http://localhost:3000`.
+- Once the client and server are running, you can access the application in your web browser at `http://localhost:4000`.
 
-
-
-
-### Client Setup
-
-1. Navigate to the client directory:
-
-    ```bash
-    cd client
-    ```
-
-2. Install dependencies:
-
-    ```bash
-    npm install
-    ```
-
-3. Create a `.env` file in the client directory and specify any necessary environment variables (e.g., API URL, authentication tokens).
-
-4. Start the client server:
-
-    ```bash
-    npm run dev
-    ```
-
-    This will start the development server for the client application.
-
-### Server Setup
-
-1. Navigate to the server directory:
-
-    ```bash
-    cd server
-    ```
-
-2. Install dependencies:
-
-    ```bash
-    npm install
-    ```
-
-3. Create a `.env` file in the server directory and specify any necessary environment variables (e.g., MongoDB connection string, JWT secret).
-
-4. Start the server:
-
-    ```bash
-    npm start
-    ```
-
-    This will start the Node.js server for the backend.
-
-5. Ensure your MongoDB instance is running and accessible.
-
-6. Access the Task Manager web application in your web browser at `http://localhost:4000`.
 
 ## Packages Used
 

@@ -182,6 +182,30 @@ Example Request Body:
 }
 ```
 
+### Get Single Task
+
+Endpoint: `GET http://localhost:4000/api/v1/task/single/:id`
+
+Description: Retrieves a single task by ID.
+
+Parameters:
+- **id** (string, required): ID of the task to retrieve.
+
+Response:
+- Status Code: 200 OK
+- Body: The task object.
+
+### Get All Tasks
+
+Endpoint: `GET http://localhost:4000/api/v1/task`
+
+Description: Retrieves all tasks.
+
+Response:
+- Status Code: 200 OK
+- Body: An array of task objects.
+
+
 ### Update Task
 
 Endpoint: `PUT http://localhost:4000/api/v1/task/update/:id`
@@ -202,5 +226,17 @@ Example Request Body:
   "description": "Write and finalize the project proposal document. Update: Add budget estimates."
 }
 ```
+### Delete Task
+
+Endpoint: `DELETE http://localhost:4000/api/v1/task/delete/:id`
+
+Description: Deletes a task by ID.
+
+Parameters:
+- **id** (string, required): ID of the task to delete.
+
+Response:
+- Status Code: 204 No Content
+
 
 

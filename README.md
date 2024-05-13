@@ -42,6 +42,58 @@ The server folder contains the backend of the application.
 
 To set up and run the Task Manager web application locally, follow these steps:
 
+# Task Manager
+
+Welcome to the Task Manager project! This project is a task management web application built using the MERN stack.
+
+## Cloning the Project
+
+To clone this project to your local machine, follow these steps:
+
+1. Open your terminal or command prompt.
+
+2. Navigate to the directory where you want to clone the project.
+
+3. Run the following command to clone the project from the Git repository:
+    git clone https://github.com/Vishalgiri8767/Task_Manager.git
+
+    
+## Setting Up the Project
+
+To set up the project on your local machine, follow these steps:
+
+1. Navigate into the cloned project directory:
+
+2. Install dependencies for the client and server:
+cd client
+npm install
+cd ..
+cd server
+npm install
+
+
+3. Set up environment variables:
+- Create a `.env` file in the `server` directory.
+- Define environment variables in the `.env` file as needed for your project setup, such as database connection details, API keys, etc.
+
+4. Start the development server:
+- For the client:
+  ```
+  cd client
+  npm start
+  ```
+- For the server:
+  ```
+  cd server
+  npm run dev
+  ```
+
+5. Access the application:
+- Once the client and server are running, you can access the application in your web browser at `http://localhost:3000`.
+
+
+
+
 ### Client Setup
 
 1. Navigate to the client directory:

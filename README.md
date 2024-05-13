@@ -148,5 +148,19 @@ Example Request Body:
  
 }
 ```
+### User Logout
+
+Endpoint: `GET http://localhost:4000/api/v1/user/logout`
+
+Description: Logs out the authenticated user.
+
+Request Headers:
+
+- **Authorization** (string): Bearer <token>
+
+Notes:
+- The Authorization header with the JWT token of the logged-in user is required for authentication.
+
+
 
 

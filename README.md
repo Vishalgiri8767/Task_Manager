@@ -4,6 +4,10 @@
 
 Task Manager is a web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It provides users with the ability to manage their tasks efficiently through features like task creation, updating, deletion, and marking tasks as completed.
 
+## REST API
+This project follows the principles of Representational State Transfer (REST) architecture, providing endpoints for creating, updating, deleting, and retrieving tasks.
+
+
 ## Features
 
 - **Task Creation:** Easily create new tasks with titles and descriptions.

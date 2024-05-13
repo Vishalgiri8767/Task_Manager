@@ -131,6 +131,10 @@ Example Request Body:
   "avatar": "<avatar_image_data>"
 }
 
+# API Documentation
+
+## User Endpoints
+
 ### User Login
 
 Endpoint: `POST http://localhost:4000/api/v1/user/login`
